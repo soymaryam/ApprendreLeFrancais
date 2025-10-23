@@ -24,6 +24,30 @@ body {
   text-shadow: 0 2px 8px rgba(162, 123, 154, 0.2);
 }
 
+.level-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.level-btn {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Arima', sans-serif;
+  background: #e8d8f0;
+  color: #5b4b7b;
+  transition: all 0.3s;
+}
+
+.level-btn.active,
+.level-btn:hover {
+  background: #a27b9a;
+  color: #fff;
+}
+
 .card {
   background-color: #ffffff;
   padding: 30px;
@@ -40,19 +64,13 @@ body {
   color: #5b4b7b; 
 }
 
-#translation {
+#translation, #translation-ar {
   font-size: 18px;
   color: #7a6f8b; 
   animation: fadeInUp 0.8s ease;
 }
 
-#translation-ar {
-  font-size: 18px;
-  color: #7a6f8b;
-  animation: fadeInUp 0.8s ease;
-}
-
-button {
+button#generateBtn {
   background: linear-gradient(135deg, #f9e3ee, #ecd8e6);
   color: #4b3b59;
   border: none;
@@ -63,15 +81,16 @@ button {
   cursor: pointer;
   transition: all 0.4s ease;
   box-shadow: 0 6px 15px rgba(188, 157, 190, 0.2);
+  font-family: 'Arima', sans-serif;
 }
 
-button:hover {
+button#generateBtn:hover {
   background: linear-gradient(135deg, #f6d1e5, #e3c6e0);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(172, 125, 190, 0.3);
 }
 
-button:active {
+button#generateBtn:active {
   transform: scale(0.97);
   box-shadow: 0 0 10px rgba(244, 203, 230, 0.5);
 }
@@ -97,8 +116,4 @@ button:active {
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(10px);}
   to { opacity: 1; transform: translateY(0);}
-}
-
-.subtitle, button {
-  font-family: 'Arima', sans-serif;
 }
