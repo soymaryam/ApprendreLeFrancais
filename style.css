@@ -117,3 +117,36 @@ button#generateBtn:active {
   from { opacity: 0; transform: translateY(10px);}
   to { opacity: 1; transform: translateY(0);}
 }
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 2.2rem; 
+  }
+
+  #word {
+    font-size: 22px;
+  }
+
+  #translation, #translation-ar {
+    font-size: 16px;
+  }
+
+  button#generateBtn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .level-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
